@@ -1,4 +1,4 @@
-# Run-buddy
+# Run-buddy, Inc
 
 
 ## Purpose
@@ -15,3 +15,6 @@ https://github.com/jypara-git/run-buddy/
 
 ## Contribution
 Made with ❤️ by Zhypara Abdieva
+
+
+### ©️2019 Run Buddy, Inc 
