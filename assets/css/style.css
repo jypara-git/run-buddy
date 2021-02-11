@@ -49,7 +49,7 @@ footer {
     padding: 40px 35px;
     display:flex;
     justify-content: space-between;
-    flex: wrap;
+    flex-wrap: wrap;
 }
 footer h2 {
     color: #024e76;
@@ -242,16 +242,16 @@ section {
  /* reach out styles start */
  .contact {
      background:#024e76;
-     height:600px;
  }
  .contact-info {
-     display:flex;
+     display: flex;
+     flex-wrap: wrap;
      justify-content: space-between;
-     flex:wrap;
  }
  .contact-info > * {
      flex: 1;
      margin: 15px;
+     position: relative;
  }
 
  .contact h2 {
@@ -259,9 +259,7 @@ section {
  }
 
  .contact-info iframe {
-     
      height: 400px;
-
  }
  .contact-info div {
      color: white;
@@ -303,16 +301,89 @@ section {
 
  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
  @media screen and (max-width:980px) {
-     
+     header {
+         padding-bottom: 0;
+         justify-content: center;
+     }t
+     header h1 {
+         width: 100%;
+         text-align:center;
+     }
+     header nav ul {
+         margin-top: 20px;
+         width: 100%;
+         justify-content: center;
+     }
+     header nav ul li {
+         font-size: 20px;
+     }
+     footer h2, footer div {
+         text-align: center;
+         width:100%;
+     }
+     .hero-cta, .hero-form {
+         width: 100%;
+     }
+     .hero-cta {
+         text-align: center;
+     }
+     .section-title {
+         width: 80%
+     }
+     .trainer {
+         flex: 0 70%;
+     }
+     .contact-info iframe{
+         flex: 1 100%;
+     }
  }
 
  /* MEDIA QUERY FOR TABLETS AND SMALLER */
  @media screen and (max-width: 768px) {
-     
-    
- }
+     section {
+         padding: 30px 15px;
+     }
+     .step h3 {
+         flex: 1 100%;
+         text-align: center;
+     }
+     .step-info {
+         flex: 2 100%;
+         text-align: center;
+         justify-content: center;
+     }
+     .step-img {
+         flex: 0 32%;
+         margin-right: 0;
+         margin-top: 15px;
+         margin-bottom: 15px;
+     }
+     .step-text {
+         flex: 100%;
+     }
+}
 
- /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
- @media screen and (max-width: 575px) {
-     
- }
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    .hero-form button {
+        width: 100%;
+    }
+    .section-title {
+        width: 95%;
+    }
+    .intro p {
+        width: 100%;
+    }
+    .trainer {
+        flex: 1 100%;
+    }
+    .contact-info {
+        text-align: center;
+    }
+    .contact-info > * {
+        flex: 0 100%;
+    }
+    .contact-form {
+        order: 3;
+    }
+}
