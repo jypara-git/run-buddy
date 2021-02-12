@@ -85,7 +85,7 @@ footer a {
     color: var(--secondary-color);
 }
 section {
-    padding: 60;
+    padding: 60px;
 }
 /* Hero Style Start */
 .hero {
@@ -217,9 +217,9 @@ section {
     font-size: 48px;
     color: var(--secondary-color);
     border-bottom: 3px solid;
-    padding-bottom: 20px;
+    
     text-align: center;
-    margin: 0 auto 35px auto;
+    margin: 0 auto 20px auto;
     width: 50%;
 }
 .primary-border {
@@ -232,6 +232,7 @@ section {
 .flex-row {
     display: flex;
 }
+
 .intro p {
     line-height: 1.7;
     color: var(--tertiary-color); 
